@@ -46,7 +46,7 @@ class Base(object):
         self.server.queue_purge(self.key)
 
 
-class SpiderQueue(object):
+class SpiderQueue(Base):
     """Per-spider FIFO queue"""
 
     def __len__(self):
