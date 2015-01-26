@@ -9,7 +9,7 @@ except ImportError:
 class Base(object):
     """Per-spider queue/stack base class"""
 
-    def __init__(self, server, spider, key, exchange):
+    def __init__(self, server, spider, key, exchange=''):
         """Initialize per-spider RabbitMQ queue.
 
         Parameters:
